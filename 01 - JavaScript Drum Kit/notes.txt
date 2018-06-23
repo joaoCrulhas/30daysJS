@@ -1,0 +1,11 @@
+We use querySelector to select elements in our HTML. In this case, we need to select <audio>. But in our HTML there are 9 <audio> elements, so is necessary select an element by user keypress.
+So we use
+const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+Now the audio variable has the selector for the key. Using template string (ES6).
+We need to add the effects when pressing a key is necessary to apply a style to the div.  For this, select the key:
+const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+and after select a key, add a class "playing",
+key.classList.add('playing');  to change the style.
+
+
+
