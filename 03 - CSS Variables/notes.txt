@@ -1,0 +1,23 @@
+- Neste exercício iremos manipular variáveis CSS via Javascript.
+- Uma maneira de declararmos as varíaveis css é abrirmos uma tag
+:root {
+  --nomeVar: valor
+}
+- Para usar essas variáveis ao longo do nosso style, temos que usar conforme o
+exemplo abaixo:
+  img {
+    backgroundColor: var(--base)
+  }
+
+- O Javascript tem que ter um input para que valores a serem fornecidos, serem
+alterados dependendo do input.
+
+- Podemos buscar todos os elementos com um querySelectorAll, trazendo todos
+os inputs da nossa tela.
+- Após recuperar os inputs, vamos trabalhar com a função de "addEventListener"
+para que escutem o evento "change".
+document.documentElement.style.setProperty(`--${this.name}`, this.value+suffix)
+Com este comando acima, conseguimos setar um valor diferente para a varíavel
+que será aplica em todo o CSS.
+
+
