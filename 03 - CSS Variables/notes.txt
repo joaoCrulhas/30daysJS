@@ -19,5 +19,5 @@ para que escutem o evento "change".
 document.documentElement.style.setProperty(`--${this.name}`, this.value+suffix)
 Com este comando acima, conseguimos setar um valor diferente para a varíavel
 que será aplica em todo o CSS.
-
+-
 
